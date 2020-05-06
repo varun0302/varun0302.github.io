@@ -26,3 +26,4 @@ body{
 button{
 	float:right;
 }	
+.navbar-toggle .icon-bar{ background-color: #6f42c1;}
