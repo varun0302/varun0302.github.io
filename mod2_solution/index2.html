@@ -2,32 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Restaurant</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-		<nav id="header-nav" class="navbar navbar-default">
+	<header class="nav-header">
+		<nav id="header-nav" class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
 			<div class="navbar-header">
-				<div><h1>FOOD,LLC</h1></div>
+				<div class="navbar-brand"><h1 class="nav-brand">FOOD,LLC</h1></div>
 				
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle Navigation</span>
-							<span class="icon-bar"></span>
+					<button type="button" class="navbar-toggle collapsed d-sm-none" data-toggle="collapse" data-target="#collapsible-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+							<span class="navbar-toggler-icon"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 					</button>
 				
 			</div>
-			<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-				<ul id="nav-list" class="nav navbar-nav navbar-right">
-					<li>MEnu</li>
+			<div id="collapsible-nav" class="navbar-collapse collapse" aria-expanded="false" >
+				<ul id="nav-list" class="nav navbar-nav navbar-right d-sm-none">
+					<li class="text-center"><p class="item">Chicken</p><hr   class="visible-xs"></li>
+					<li class="text-center"><p class="item">Beef</p><hr   class="visible-xs"></li>
+					<li class="text-center"><p class="item">Sushi</p><hr   class="visible-xs"></li>
 				</ul>
-			</div>		
+			</div>
+			</div>	
 		</nav>
+	</header>	
 
 
 		<div id="ourmenu" ><h2>Our Menu</h2></div>
@@ -45,6 +51,9 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootsrap.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	
 </body>
 </html>
